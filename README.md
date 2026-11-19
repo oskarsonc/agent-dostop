@@ -1,6 +1,6 @@
 # Agent dostop
 
-Read-only Google access (Gmail, Calendar, Drive) for personal AI assistants that run on your own device.
+Google access (Gmail, Calendar, Drive, Docs, Sheets, Slides, Tasks, Contacts) for personal AI assistants that run on your own device.
 
 This repository hosts the public pages for the app's Google OAuth consent screen:
 
@@ -12,8 +12,10 @@ This repository hosts the public pages for the app's Google OAuth consent screen
 
 | Service | Scope | Access |
 |---|---|---|
-| Gmail | `gmail.readonly` | Read-only |
-| Google Calendar | `calendar.readonly` | Read-only |
-| Google Drive | `drive.readonly` | Read-only |
+| Gmail | `gmail.readonly`, `gmail.compose`, `gmail.send`, `gmail.modify`, `gmail.labels`, `gmail.settings.basic` | Read, draft, send, organize |
+| Google Calendar | `calendar`, `calendar.events`, `calendar.readonly` | Read and manage events |
+| Google Drive | `drive`, `drive.file`, `drive.readonly` | Read and manage files |
+| Docs, Sheets, Slides | `documents`, `spreadsheets`, `presentations` (+ read-only) | Read and edit |
+| Tasks, Contacts | `tasks`, `contacts` (+ read-only) | Read and manage |
 
-The app has no server. Sign-in tokens stay in the operating system keyring on the user's device. Access can be revoked at any time in [Google Account permissions](https://myaccount.google.com/permissions).
+The app has no server. Sign-in tokens stay on the user's device. Access can be revoked at any time in [Google Account permissions](https://myaccount.google.com/permissions).

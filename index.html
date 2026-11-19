@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Agent dostop</title>
-  <meta name="description" content="Read-only Google access for personal AI assistants. Runs on your own device. No servers, no tracking.">
+  <meta name="description" content="Google access for personal AI assistants. Runs on your own device. No servers, no tracking.">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -23,15 +23,15 @@
   <main class="wrap">
     <section class="hero">
       <span class="eyebrow">Private tool</span>
-      <h1>Read-only Google access for personal AI assistants.</h1>
-      <p class="lead">Agent dostop lets a personal AI assistant, running on your own computer, read your Gmail, Google Calendar and Google Drive so it can answer your questions. It cannot send, delete or change anything.</p>
+      <h1>Google access for personal AI assistants.</h1>
+      <p class="lead">Agent dostop lets a personal AI assistant, running on your own computer, work with your Gmail, Calendar, Drive, Docs, Sheets, Slides, Tasks and Contacts on your behalf: find and summarize, draft and send, organize and plan.</p>
     </section>
 
     <div class="grid">
       <div class="card">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
-        <h3>Read-only</h3>
-        <p>Only read-only permissions are requested. Sending email, deleting files or editing events is not possible.</p>
+        <h3>You stay in control</h3>
+        <p>You approve each permission on Google's consent screen. Assistants are set up to ask before sending, deleting or accepting anything.</p>
       </div>
       <div class="card">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
@@ -48,11 +48,13 @@
     <h2>Requested permissions</h2>
     <div class="table-scroll">
       <table>
-        <thead><tr><th>Service</th><th>Scope</th><th>Access</th></tr></thead>
+        <thead><tr><th>Service</th><th>Scopes</th><th>Access</th></tr></thead>
         <tbody>
-          <tr><td>Gmail</td><td><code>gmail.readonly</code></td><td><span class="badge">Read-only</span></td></tr>
-          <tr><td>Google Calendar</td><td><code>calendar.readonly</code></td><td><span class="badge">Read-only</span></td></tr>
-          <tr><td>Google Drive</td><td><code>drive.readonly</code></td><td><span class="badge">Read-only</span></td></tr>
+          <tr><td>Gmail</td><td><code>gmail.readonly</code> <code>gmail.compose</code> <code>gmail.send</code> <code>gmail.modify</code> <code>gmail.labels</code> <code>gmail.settings.basic</code></td><td>Read, draft, send, organize</td></tr>
+          <tr><td>Google Calendar</td><td><code>calendar</code> <code>calendar.events</code> <code>calendar.readonly</code></td><td>Read and manage events</td></tr>
+          <tr><td>Google Drive</td><td><code>drive</code> <code>drive.file</code> <code>drive.readonly</code></td><td>Read and manage files</td></tr>
+          <tr><td>Docs, Sheets, Slides</td><td><code>documents</code> <code>spreadsheets</code> <code>presentations</code> (+ read-only)</td><td>Read and edit</td></tr>
+          <tr><td>Tasks, Contacts</td><td><code>tasks</code> <code>contacts</code> (+ read-only)</td><td>Read and manage</td></tr>
         </tbody>
       </table>
     </div>
@@ -60,8 +62,8 @@
 
     <h2>How it works</h2>
     <ol>
-      <li>You sign in with your Google Account and approve read-only access.</li>
-      <li>Your assistant asks Google for the messages, events or files it needs to answer your request.</li>
+      <li>You sign in with your Google Account and approve the access you want.</li>
+      <li>When you ask for something, your assistant calls Google directly from your computer to read or change only what that request needs.</li>
       <li>Nothing is copied to any server run by Agent dostop. See the <a href="privacy.html">Privacy Policy</a> for details.</li>
     </ol>
 
