@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent dostop</title>
+  <meta name="description" content="Read-only Google access for personal AI assistants. Runs on your own device. No servers, no tracking.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/logo.svg" alt="" width="28" height="28">Agent dostop</a>
+      <nav class="links">
+        <a href="./" aria-current="page">Overview</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">Private tool</span>
+      <h1>Read-only Google access for personal AI assistants.</h1>
+      <p class="lead">Agent dostop lets a personal AI assistant, running on your own computer, read your Gmail, Google Calendar and Google Drive so it can answer your questions. It cannot send, delete or change anything.</p>
+    </section>
+
+    <div class="grid">
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>Read-only</h3>
+        <p>Only read-only permissions are requested. Sending email, deleting files or editing events is not possible.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
+        <h3>Runs on your device</h3>
+        <p>There is no Agent dostop server. Sign-in tokens stay in your operating system's keyring.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 3v6h6"/></svg></div>
+        <h3>Revoke any time</h3>
+        <p>Remove access with one click in your <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</p>
+      </div>
+    </div>
+
+    <h2>Requested permissions</h2>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Service</th><th>Scope</th><th>Access</th></tr></thead>
+        <tbody>
+          <tr><td>Gmail</td><td><code>gmail.readonly</code></td><td><span class="badge">Read-only</span></td></tr>
+          <tr><td>Google Calendar</td><td><code>calendar.readonly</code></td><td><span class="badge">Read-only</span></td></tr>
+          <tr><td>Google Drive</td><td><code>drive.readonly</code></td><td><span class="badge">Read-only</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted">You choose which of these to allow on Google's consent screen. The assistant only gets what you approve.</p>
+
+    <h2>How it works</h2>
+    <ol>
+      <li>You sign in with your Google Account and approve read-only access.</li>
+      <li>Your assistant asks Google for the messages, events or files it needs to answer your request.</li>
+      <li>Nothing is copied to any server run by Agent dostop. See the <a href="privacy.html">Privacy Policy</a> for details.</li>
+    </ol>
+
+    <h2>Who it is for</h2>
+    <p>Agent dostop is a private tool for a small group of people who use it with their own assistants. It is not a public service and is not offered for sale. The name means “agent access” in Slovenian.</p>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span>© 2026 Oskar Šonc</span>
+      <nav>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="https://github.com/oskarsonc/agent-dostop/issues">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
